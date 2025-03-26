@@ -1,0 +1,22 @@
+
+每次与AI助手交互后，如果产生了文件变更，需要在ai-change-log.md文件中追加新的变更记录。变更记录应包含以下内容：
+1. 对话时间：记录当前的日期和时间
+2. 对话主题：简要描述本次交互的主要目的
+3. 文件变更：列出所有被修改、新增或删除的文件，并对每个文件的变更内容进行简要说明
+4. 业务背景或技术上下文：记录相关的业务背景或技术上下文（如果有）
+
+格式示例：
+```markdown
+## 2023-11-20 14:30 - 实现用户登录功能
+
+### 变更文件
+- 新增: src/main/java/com/example/controller/UserController.java - 添加用户登录和注册的接口
+- 修改: src/main/java/com/example/service/UserServiceImpl.java - 实现用户认证逻辑
+- 修改: src/main/resources/templates/login.html - 优化登录表单UI和验证
+
+### 背景
+实现基于Spring Security的用户登录功能，包括表单验证和登录失败处理。
+
+---
+
+```
